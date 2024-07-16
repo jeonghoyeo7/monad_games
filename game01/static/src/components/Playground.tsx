@@ -167,6 +167,7 @@ const Playground: React.FC = () => {
           ? "마우스나 터치로 비비둑을 움직여주세요!"
           : "Move Bibiduk with your mouse or touch!"}
       </p>
+      <p className="created">Created by Baeksu</p>
       <button
         className="refresh-button"
         onClick={() => window.location.reload()}
