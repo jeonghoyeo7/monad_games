@@ -144,6 +144,12 @@ const Playground: React.FC = () => {
     const mouse = Mouse.create(render.canvas);
     const mouseConstraint = MouseConstraint.create(engine, {
       mouse,
+      constraint: {
+        stiffness: 0.2,
+        render: {
+          visible: false,
+        },
+      },
     });
     World.add(engine.world, mouseConstraint);
 
